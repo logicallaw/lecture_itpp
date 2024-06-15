@@ -23,13 +23,14 @@ def search(name):
         word = line.strip()
         if name in word:
             word_list = word.split("|")
-            print(word_list)
             print("average:%s,grade:%s\n" %(word_list[4], word_list[5]))
             is_name = True
     if not is_name:
         print("없음\n")
     f.close()
+    return
 
 search("Sun")
 search("Jacob")
 search("Yuna")
+
